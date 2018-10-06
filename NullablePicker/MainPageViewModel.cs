@@ -16,6 +16,21 @@ namespace NullablePicker
         "Angola"
     };
 
+
+        public string country;
+        public string Country
+        {
+            get
+            {
+                return country;
+            }
+            set
+            {
+                country = value;
+                OnPropertyChanged("Country");
+            }
+
+        }
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName)
         {

@@ -9,6 +9,12 @@ namespace NullablePicker
 {
     public partial class MainPage : ContentPage
     {
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+
+            var t = ClearPicker.SelectedItem;
+        }
+
         MainPageViewModel viewModel;
         public MainPage()
         {
